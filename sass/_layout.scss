@@ -1,0 +1,12 @@
+.site-content{
+	@include mq(pc) {
+		margin-left: $nav_width;
+    overflow: hidden;
+	}	
+}
+
+.site-footer{
+	@include mq(pc) {
+		margin-left: $nav_width;
+	}	
+}

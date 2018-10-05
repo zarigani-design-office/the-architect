@@ -1,0 +1,73 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+/*+++ Color palette +++*/
+
+$black :     #333333;
+$pale-gray : #F3F3F3;
+$red :       #A81111;
+$gray :      #E3E3E3;
+$dark-gray : #A7A7A7;
+
+/* top content-block background-color */
+$color1: rgba(191, 201, 215, 1);
+$color2: rgba(170, 150, 138, 1);
+$color3: rgba(90, 125, 124, 1);
+$color4: rgba(58, 68, 84, 1);
+$color5: rgba(83, 104, 126, 1);
+
+/*+++ width +++*/
+$nav_width : 208px;
+
+$breakpoints:( "pc": "screen and (min-width:769px)",
+	"sp": "screen and (max-width:768px)",
+)!default;
+
+@mixin mq($bp: pc) {
+	@media #{map-get($breakpoints, $bp)} {
+		@content;
+	}
+}
+
+/*width*/
+@mixin flex-columns( $article-width, $margin, $padding, $count, $negative) {
+	$container-width: ( $article-width + $margin * 2 ) * 1;
+	$query-width: $container-width + $padding * 2;
+/*	@media (min-width: $query-width){
+		width: $container-width;
+	};*/
+	@for $i from 2 through $count {
+		$container-width: ( $article-width + $margin * 2 ) * $i;
+		$query-width: $container-width + $padding * 2 + $negative;
+		@media (min-width: $query-width){
+			width: $container-width;
+		};
+	}
+}

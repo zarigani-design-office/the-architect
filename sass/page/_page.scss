@@ -1,0 +1,72 @@
+
+.page-main{
+	margin: 64px auto 0;
+	min-height: 60vh;
+  padding: 0 16px;
+  max-width: 912px;
+}
+
+.page-ttl{
+	font-size: 2.8rem;
+	font-weight: bold;
+	border-bottom: 1px solid $gray;
+	margin: 0 auto 40px;
+	padding: 0 16px 24px;
+	max-width: 912px;
+	@include mq(sp) {
+		padding: 0 24px 24px;
+	}
+}
+
+.page-header-image{
+	
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	@include mq(pc) {
+		width: calc(100% - 208px);
+		left: 208px;
+		
+	}
+	img{
+		width: 100%;
+		object-fit: cover;
+		object-position: center center;
+		@include mq(pc) {
+			height: 400px;
+		}
+
+	}
+}
+
+
+.page-header{
+	width: auto;
+	margin: 0 auto;
+}
+
+.ttl-404{
+	font-size: 1.6rem;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+@import "about";
+
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
+@import "archive";
+
+/*--------------------------------------------------------------
+# Single
+--------------------------------------------------------------*/
+@import "single";
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+@import "comments";

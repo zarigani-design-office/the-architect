@@ -1,0 +1,15 @@
+.wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item{
+	width: 100%;
+}
+
+.wp-block-gallery.columns-3 .blocks-gallery-image, .wp-block-gallery.columns-3 .blocks-gallery-item{
+	width: 100%;
+}
+
+.wp-block-gallery.columns-4 .blocks-gallery-image, .wp-block-gallery.columns-4 .blocks-gallery-item{
+	width: 100%;
+}
+
+.wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption{
+	text-align: left;
+}

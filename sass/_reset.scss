@@ -1,0 +1,71 @@
+/*====== RESET ======*/
+
+/*
+Zarigani Design Office Reset CSS
+Author:Zarigani Design Office
+Author URI: https://zarigani-design-office.com
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font:inherit;
+  font-family:inherit;
+  font-size:100%;
+  font-style:inherit;
+  font-weight:inherit;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+	background: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  -webkit-text-size-adjust:100%;
+  -moz-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  -o-text-size-adjust:100%;
+  text-size-adjust:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  font-family: "Muli","游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
+  color: #000;
+  background: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*for IE11*/
+main{
+	display: block;
+}

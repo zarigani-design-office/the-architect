@@ -1,0 +1,84 @@
+.site-footer{
+	background-color: #FFFFFF;
+	border-top: 1px solid $gray;
+	@include mq(pc) {
+		padding: 40px 48px 24px 48px;
+	}
+	@include mq(sp) {
+		padding: 24px;
+	}
+}
+
+.footer-wrapper{
+	@include mq(pc) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr 56px;
+	}
+
+}
+
+.footer-logo{
+	@include mq(pc) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		padding-bottom: 16px;
+		img{
+			width: 224px;
+			height: auto;
+		}
+	}
+	@include mq(sp) {
+		margin-bottom: 16px;
+	}
+}
+
+.footer-company{
+	letter-spacing: 0.08em;
+	@include mq(pc) {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		font-size: 1.3rem;
+		line-height: (20 / 13);
+	}
+	@include mq(sp) {
+		font-size: 1.3rem;
+		line-height: 1.4;
+		margin-bottom: 24px;
+	}
+}
+
+.footter-sns-area{
+	@include mq(pc) {
+		grid-column: 2/3;
+		grid-auto-rows: 1/2;
+	}
+
+}
+
+.sns-list{
+	display: flex;
+	align-items: center;
+	@include mq(pc) {
+		justify-content: flex-end;
+		li{
+			margin: 0 12px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	@include mq(sp) {
+		li{
+			margin-right: 16px;
+		}
+	}
+}
+
+.copyright{
+	margin-top: 16px;
+	font-size: 1.1rem;
+	@include mq(sp) {
+		margin-top: 24px;
+	}
+}

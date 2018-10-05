@@ -1,0 +1,40 @@
+.basic-ttl{
+
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	margin:0 auto 24px;
+	&:after{
+		content: '';
+		display: block;
+		width: 24px;
+		height: 2px;
+		background-color: $black;
+		margin-top: 24px;
+	}
+}
+
+.post-list-ttl{
+	@include mq(sp) {
+		padding-left: 16px;
+	}
+}
+
+
+.basic-text{
+	letter-spacing: 0.01em;
+	font-size: 1.4rem;
+	line-height: 2;
+
+}
+
+.basic-link{
+	display: inline-block;
+	padding-bottom: 2px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	border-bottom: 1px solid $black;
+	letter-spacing: 0.06em;
+}
+

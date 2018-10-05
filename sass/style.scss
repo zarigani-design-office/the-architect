@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*!
+Theme Name: The Architect
+Theme URI: https://zarigani-design-office.github.io/the-architect-introduce/
+Author: Zarigani Design Office
+Author URI: https://zarigani-design-office.com
+Description: This theme is for start up architect
+Version: 0.9.7
+License: GNU General Public License v3 or later
+License URI: LICENSE
+Text Domain: the_architect
+Tags: architect, architecture, design agency, design, office
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+the_architect is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+@import "universal";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "common/header";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "common/footer";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+
+/*--------------------------------------------------------------
+# Front page
+--------------------------------------------------------------*/
+@import "front-page/front-page";
+
+/*--------------------------------------------------------------
+# Page
+--------------------------------------------------------------*/
+@import "page/page";
+
+/*--------------------------------------------------------------
+# Slick
+--------------------------------------------------------------*/
+@import "slick/slick";

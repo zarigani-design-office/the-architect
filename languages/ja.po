@@ -1,0 +1,405 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-06-09 22:08+0900\n"
+"PO-Revision-Date: 2018-06-09 22:13+0900\n"
+"Last-Translator: zarigani-design-office\n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;_n_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: sass\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+#: class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "必要なプラグインをインストールする"
+
+#: class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "プラグインをインストール"
+
+#: class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "プラグインをインストール中: %s"
+
+#: class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "プラグインをアップデート中: %s"
+
+#: class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "プラグインのAPIで問題が発生しました"
+
+#: class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "このテーマには次のプラグインが必須です: %1$s"
+
+#: class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+"このテーマには次のプラグインをインストールすることをオススメします:%1$s"
+
+#: class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"次のプラグインは互換性を保つために最新版にアップデートする必要があります:%1$s"
+
+#: class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr "アップデートがあります:%1$s"
+
+#: class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "次の必須プラグインは現在有効化されていません:%1$s"
+
+#: class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "次の推奨プラグインは現在有効化されていません:%1$s"
+
+#: class-tgm-plugin-activation.php:378
+#, fuzzy
+#| msgid "Installing Plugin: %s"
+msgid "Begin installing plugin"
+msgstr "プラグインをインストール中: %s"
+
+#: class-tgm-plugin-activation.php:383
+#, fuzzy
+#| msgid "Updating Plugin: %s"
+msgid "Begin updating plugin"
+msgstr "プラグインをアップデート中: %s"
+
+#: class-tgm-plugin-activation.php:388
+#, fuzzy
+#| msgid "Plugin activation failed."
+msgid "Begin activating plugin"
+msgstr "プラグインの有効化に失敗しました"
+
+#: class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "必要なプラグインインストーラに戻る"
+
+#: class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr "ダッシュボードに戻る"
+
+#: class-tgm-plugin-activation.php:394 class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr "プラグインを無事に有効化しました"
+
+#: class-tgm-plugin-activation.php:395
+msgid "The following plugin was activated successfully:"
+msgstr "次のプラグインを有効化しました"
+
+#: class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "プラグイン %1$sはすでに有効化されています"
+
+#: class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"プラグインは有効化されていません。より新しいバージョンの%sが必要です。プラグ"
+"インをアップデートしてください。"
+
+#: class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "すべてのプラグインをインストールし、有効化しました。%1$s"
+
+#: class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "非表示にする"
+
+#: class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"さらに必須なプラグイン、もしくは推奨されるプラグインがあります。アップデート"
+"するか有効化してください"
+
+#: class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "サイト管理者にお問い合わせください"
+
+#: class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr "必須"
+
+#: class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr "推奨"
+
+#: class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr "WordPressリポジトリ"
+
+#: class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr "外部サイト"
+
+#: class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr "パッケージ内に含まれています"
+
+#: class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr "インストールされていません"
+
+#: class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr "インストールしましたが、有効化されていません"
+
+#: class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr "有効"
+
+#: class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr "要求されたアップデートは入手できません"
+
+#: class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr "アップデートする必要があります"
+
+#: class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr "アップデートを推奨します"
+
+#: class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr "インストールされているバージョン: "
+
+#: class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr "最低動作バージョン:"
+
+#: class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr "入手できるバージョン:"
+
+#: class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr "プラグイン"
+
+#: class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr "ソース"
+
+#: class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr "タイプ"
+
+#: class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr "バージョン"
+
+#: class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr "ステータス"
+
+#: class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr "インストール %2$s"
+
+#: class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr "アップデート %2$s"
+
+#: class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr "有効化 %2$s"
+
+#: class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr "インストール"
+
+#: class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr "アップデート"
+
+#: class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr "有効化"
+
+#: class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "インストールするプラグインが選択されていません"
+
+#: class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "アップデートするプラグインが選択されていません"
+
+#: class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr "現在、インストールするプラグインは入手できません"
+
+#: class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr "現在、アップデートするプラグインは入手できません"
+
+#: class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr "プラグインの有効化に失敗しました"
+
+#: class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "プラグイン%1$s (%2$d/%3$d)をアップデート中"
+
+#: class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "インストール中にエラーが起こりました。%1$s: <strong>%2$s</strong>"
+
+#: class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "%1$sのインストールに失敗しました"
+
+#: class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"インストールと有効化が進行中です。この作業は少し時間がかかるかもしれません"
+"が、ご了承ください。"
+
+#: class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$sのインストールと有効化に成功しました"
+
+#: class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr "すべてのインストールと有効化が完了しました"
+
+#: class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "プラグイン%1$s (%2$d/%3$d)のインストール、および有効化中です。"
+
+#: class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"インストールの作業が進行中です。この作業は少し時間がかかるかもしれませんが、"
+"ご了承ください。"
+
+#: class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr "すべてのインストールが完了しました"
+
+#: class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "プラグイン%1$s (%2$d/%3$d)をインストール中です"
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "<span class=\"screen-reader-text\">  %s</span>にコメントを残す"
+
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "<span class=\"screen-reader-text\">%s</span>を編集する"
+
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"公開する準備はできていますか？<a href=\"%1$s\">ここから始めてください。</a>"
+
+#: template-parts/content.php:39
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "続きを読む<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#~ msgid "ngSrc,ngSrcset,src,srcset"
+#~ msgstr "ngSrc,ngSrcset,src,srcset"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid "Commands:"
+#~ msgstr "コマンド: "
+
+#~ msgid "aliases:"
+#~ msgstr "エイリアス: "
+
+#~ msgid "boolean"
+#~ msgstr "真偽値"
+
+#~ msgid "count"
+#~ msgstr "カウント"
+
+#~ msgid "string"
+#~ msgstr "文字列"
+
+#~ msgid "array"
+#~ msgstr "配列"
+
+#~ msgid "number"
+#~ msgstr "数値"
+
+#~ msgid "required"
+#~ msgstr "必要"
+
+#~ msgid "choices:"
+#~ msgstr "選択: "
+
+#~ msgid "Examples:"
+#~ msgstr "例: "
+
+#~ msgid "generated-value"
+#~ msgstr "生成される値"
+
+#~ msgid "default:"
+#~ msgstr "デフォルト: "
+
+#~ msgid "Not enough non-option arguments: got %s, need at least %s"
+#~ msgstr "%s この変数では不十分です。少なくとも%s必要です"
+
+#~ msgid "Too many non-option arguments: got %s, maximum of %s"
+#~ msgstr "%s この変数では多すぎです。最大%sです"
+
+#~ msgid "Invalid values:"
+#~ msgstr "無効な値: "
+
+#~ msgid "Argument: %s, Given: %s, Choices: %s"
+#~ msgstr "Argument: %s, Given: %s, Choices: %s"

@@ -1,0 +1,79 @@
+
+.comments-area{
+	font-size: 1.3rem;
+	margin: 0 auto 48px;
+	@include mq(pc) {
+		max-width: 912px;
+		padding: 0 16px;
+	}
+	@include mq(sp) {
+		padding: 0 24px;
+	}
+
+	label[for="comment"]{
+		display: block;
+	}
+	p{
+		margin-bottom: 1em;
+	}
+	textarea,input[type="text"],input[type="email"],input[type="url"]{
+		width: 100%;
+		border: 1px solid $dark-gray;
+		padding: 8px 4px;
+	}
+	.form-submit{
+		margin-top: 32px;
+	}
+}
+
+.comments-title{
+	margin-bottom: 16px;
+}
+
+.comment-body{
+	margin-bottom: 16px;
+}
+
+.comment-author{
+	margin-bottom: 8px;
+}
+
+.comment-metadata{
+	margin-bottom: 8px;
+}
+
+.comment-content{
+	font-size: 1.4rem;
+	line-height: 1.8;
+}
+
+.comment-reply-title{
+	margin-bottom: 8px;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.comment-reply-link,.form-submit input[type="submit"]{
+	display: inline-block;
+	border: 1px solid $black;
+	padding: 8px 24px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s;
+	&:hover{
+		background-color: $black;
+		color: #FFF;
+	}
+}
+
+.comment-list{
+	li{
+		margin-bottom: 32px;
+	}
+	.children{
+		padding-left: 24px;
+		border-left: 1px solid $gray;
+	}
+}

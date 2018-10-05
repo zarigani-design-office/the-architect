@@ -1,0 +1,43 @@
+.site-header{
+	position: fixed;
+	background-color: #FFF;
+	z-index: 99999;
+	@include mq(pc) {
+		width: 208px;
+		height: 100%;
+		padding: 48px 32px;
+		left: 0;
+		top: 0;
+	}
+}
+
+.site-branding{
+	@include mq(pc) {
+		margin-bottom: 56px;
+	}
+}
+
+.custom-logo{
+	width: 144px;
+	height: auto;
+}
+
+.menu-toggle{
+	@include mq(pc) {
+		display: none;
+	}
+}
+
+.main-navigation{
+	
+}
+
+.menu-item{
+	color: $black;
+	font-family: 'Muli';
+	@include mq(pc) {
+		font-size: 1.3rem;
+		font-weight: bold;
+		margin-bottom: 32px;
+	}
+}

@@ -1,0 +1,189 @@
+.wysiwyg{
+	letter-spacing: 0.01em;
+	font-size: 1.4rem;
+	line-height: 2;
+	h1,h2{
+		font-weight: bold;
+		letter-spacing: 0.08em;
+		font-size: 2.4rem;
+		line-height: 1.2;
+		margin-top: 1.5em;
+		margin-bottom: 24px;
+		&:after{
+			content: '';
+			display: block;
+			width: 24px;
+			height: 2px;
+			background-color: $black;
+			margin-top: 24px;
+		}
+	}
+	h3{
+		font-weight: bold;
+		font-size: 2rem;
+		margin-top: 1.2em;
+		margin-bottom: 1em;
+		@include mq(pc) {
+			
+		}
+	}
+	h4{
+		font-weight: bold;
+		font-size: 1.8rem;
+		margin-bottom: 1em;
+		@include mq(pc) {
+			
+		}
+	}
+	h5{
+		font-weight: bold;
+		font-size: 1.6rem;
+		margin-bottom: 1em;
+		@include mq(pc) {
+			
+		}
+	}
+	h6{
+		font-weight: bold;
+		font-size: 1.4rem;
+		margin-bottom: 1em;
+		@include mq(pc) {
+
+		}
+	}
+	p{
+		letter-spacing: 0.01em;
+		font-size: 1.4rem;
+		line-height: 2;
+		margin-bottom: 1em;
+		@include mq(pc) {
+			
+		}
+	}
+	ul,ol{
+		margin-bottom: 1em;
+	}
+	ul{
+		li{
+			list-style: circle;
+			margin-left: 1em;
+		}
+	}
+	ol{
+		li{
+			list-style: decimal;
+			margin-left: 1em;
+		}
+	}
+	a{
+		text-decoration: underline;
+	}
+	blockquote{
+		background-color: $gray;
+		padding: 16px;
+		margin-bottom: 1em;
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+	hr{
+		background: $gray;
+		margin: 2em 0px;
+	}
+	pre{
+		margin-bottom: 1em;
+	}
+	strong,b{
+		font-weight: bold;
+	}
+	/*Gutenberg*/
+	.wp-block-gallery{
+		margin:0 0 56px;
+	}
+	.wp-block-columns{
+		margin-bottom: 1em;
+		@include mq(sp) {
+			display: block;
+		}
+	}
+  .wp-block-column{
+    &:first-child{
+      flex: 2;
+      @include mq(pc) {
+        margin-right: 56px;
+      }
+    }
+    &:last-child{
+      flex: 1;
+    }
+  }
+	.wp-block-image{
+		width: 100%;
+		margin-bottom: 1em;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.has-larger-font-size{
+		font-size: 2.8rem;
+	}
+	.has-large-font-size{
+		font-size: 2.0rem;
+	}
+	.has-small-font-size{
+		font-size: 1.2rem;
+	}
+	.wp-block-button .wp-block-button__link{
+		border-radius: 0;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+	.blocks-gallery-item figcaption{
+		text-align: left;
+		font-size: 1.4rem;
+	}
+	/*old editor*/
+	.gallery{
+		margin: 0 0 56px;
+	}
+	/*Slick gutenberg*/
+	.slick-slider{
+		@include mq(pc) {
+			width: calc(100vw - 208px);
+			margin-right: calc(50% - 50vw);
+			margin-left: calc(50% - 50vw + 104px);
+		}
+		@include mq(sp) {
+			margin-right: calc(50% - 50vw);
+			margin-left: calc(50% - 50vw);
+		}
+		.blocks-gallery-item{
+			margin: 0;
+			display: block;
+		}
+		.slick-slide{
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		.slick-arrow{
+			position: absolute;
+			top: 50%;
+			z-index: 2;
+			border: none;
+			&.slick-prev{
+				left: 16px;
+			}
+			&.slick-next{
+				right: 16px;
+			}
+			&:hover{
+				background-color: transparent;
+			}
+		}
+	}
+}

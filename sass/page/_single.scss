@@ -1,0 +1,166 @@
+.single-main{
+	margin-top: 64px;
+}
+
+.entry-content{
+
+	@include mq(pc) {
+		max-width: 912px;
+		padding: 0 16px;
+		margin: 0 auto 56px;
+	}
+	@include mq(sp) {
+		padding: 0 24px;
+		margin: 0 auto 40px;
+	}
+  
+}
+
+.page-links{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	>a,>span{
+		display: inline-block;
+		width: 16px;
+		padding-bottom: 2px;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-decoration: none;
+		border-bottom: 1px solid $black;
+		letter-spacing: 0.06em;
+		margin: 0 8px;
+		color: $black;
+	}
+	>a{
+		.page-links-num{
+			color: $black;
+			
+		}
+	}
+	>.page-links-num{
+		color: $dark-gray;
+		border-color: transparent;
+	}
+}
+
+.nav-links{
+	
+	margin: 0 auto 32px;
+	@include mq(pc) {
+		max-width: 912px;
+		padding: 0 16px;
+	}
+	@include mq(sp) {
+		padding: 0 24px;
+	}
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	a{
+		display: inline-block;
+		padding-bottom: 2px;
+		font-size: 1.4rem;
+		font-weight: bold;
+		background-color: #FFF;
+		border-bottom: 1px solid $black;
+		letter-spacing: 0.06em;
+	}
+}
+
+.nav-previous{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 16px;
+  a{
+    position: relative;
+    padding-left: 15px;
+  }
+	a:before{
+		content: '\2002';
+		display: inline-block;
+		width: 8px;
+		height: auto;
+    margin-top: -9px;
+		margin-right: 8px;
+		background-image: url('./img/arrow_bk_s.png');
+		background-repeat: no-repeat;
+		background-size: auto 14px;
+		background-position: 0 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+	}
+	@include mq(pc) {
+		width: 60%;
+		a:after{
+			content: '';
+			display: inline-block;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			z-index: -1;
+			margin-left: 16px;
+			display: inline-block;
+			border-bottom: 1px solid $gray;
+		}
+	}
+
+}
+
+.nav-next{
+	text-align: right;
+	position: relative;
+	overflow: hidden;
+	float: right;
+  a{
+    position: relative;
+    padding-right: 15px;
+  }
+	a:after{
+		content: '\2002';
+		display: inline-block;
+		width: 8px;
+		height: auto;
+    margin-top: -9px;
+		margin-left: 8px;
+		background-image: url('./img/arrow_bk_s.png');
+		background-repeat: no-repeat;
+		background-size: auto 14px;
+		background-position: 0 50%;
+		transform: rotateZ(180deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+	}
+	@include mq(pc) {
+		width: 60%;
+		a:before{
+			content: '';
+			display: inline-block;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			z-index: -1;
+			margin-left: calc(-100% - 16px);
+			display: inline-block;
+			border-bottom: 1px solid $gray;
+		}
+	}
+	
+}
+
+.other-articles-wrapper{
+	@include mq(pc) {
+		max-width: 912px;
+		padding: 0 16px;
+		margin: 0 auto;
+	}
+	
+	@include mq(sp) {
+	}
+}
