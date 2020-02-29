@@ -87,7 +87,7 @@ get_header();
 	</div><!-- #primary -->
 	<script defer>
 		jQuery(function($) {
-			$( '.gallery, .wp-block-gallery' ).each( function(){
+			$( '.blocks-gallery-item' ).parent().each( function(){
 				$(this).slick( {
 					arrows: true,
 					dots: true,
