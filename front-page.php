@@ -12,24 +12,6 @@ get_header();
 		<main id="main" class="site-main">
 
 			<?php
-		/*if ( have_posts() ) :
-
-
-			 Start the Loop 
-			while ( have_posts() ) :
-				the_post();
-			var_dump(get_post_meta($post->ID));
-			
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-			endif;*/
 			//カスタムフィールド読み込み
 			if ( class_exists( 'Smart_Custom_Fields' ) ):
 			$top_custom_fields = SCF::get_option_meta( 'theme-options' );
@@ -58,7 +40,9 @@ get_header();
 					<div class="top-content-block-text about">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								ABOUT US
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-about' ] );
+							?>
 							</h1>
 							<p class="basic-text top-content-block-p">
 								<?php echo esc_html( $top_custom_fields[ 'top-about-text' ] );?>
@@ -79,7 +63,9 @@ get_header();
 					<div class="top-content-block-text works">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								WORKS
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-works' ] );
+							?>
 							</h1>
 							<p class="basic-text top-content-block-p">
 								<?php echo esc_html( $top_custom_fields[ 'top-works-text' ] );?>
@@ -101,7 +87,9 @@ get_header();
 					<div class="top-content-block-text news">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								NEWS
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-news' ] );
+							?>
 							</h1>
 							<ul class="top-content-block-news-list">
 							
@@ -146,7 +134,9 @@ get_header();
 					<div class="top-content-block-text blog">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								BLOG
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-blog' ] );
+							?>
 							</h1>
 							<ul class="top-content-block-news-list">
 
@@ -185,7 +175,7 @@ get_header();
 				<section class="top-content-contact">
 					<!--<figure  class="top-content-block-img contact">
 						<?php
-						echo wp_get_attachment_image( $top_custom_fields[ 'top-contact-image' ] , 'large' );
+							echo wp_get_attachment_image( $top_custom_fields[ 'top-contact-image' ] , 'large' );
 						?>
 					</figure>-->
 					<div class="top-content-block-contact-wrapper">
@@ -193,7 +183,9 @@ get_header();
 							まずは、お気軽にご相談ください。
 						</p>
 						<h1 class="basic-ttl">
-							CONTACT
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-contact' ] );
+							?>
 						</h1>
 						<div class="top-content-block-contact">
 							<?php echo apply_filters('the_content', $top_custom_fields[ 'top-contact-text' ]);?>
@@ -224,32 +216,6 @@ get_header();
 				pauseOnFocus: false,
 				pauseOnHover : false,
 			} );
-			
-			/*$( window ).scroll( function() {
-				let scrollVal = $( window ).scrollTop();
-				//console.log(scrollVal)
-				$( '.top-content-block-border' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal - 260 ) / 8
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-				$( '.top-content-block-text' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal - 250 ) / 16
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-				$( '.top-content-block-img img' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal + 0) / 24
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-			} )*/
 		});
 	</script>
 	<?php
