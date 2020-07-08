@@ -1,0 +1,11 @@
+{
+  "name": "the-architect",
+  "version": "0.9.8",
+  "repository": "https://github.com/zarigani-design-office/the-architect.git",
+  "author": "zarigani-design-office",
+  "license": "GNU General Public License v3.0",
+  "devDependencies": {
+    "sass": "1.26.10"
+  },
+  "scripts": {"sass":"sass sass/style.scss style.css"}
+}
