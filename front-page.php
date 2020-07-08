@@ -58,7 +58,9 @@ get_header();
 					<div class="top-content-block-text about">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								ABOUT US
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-about' ] );
+							?>
 							</h1>
 							<p class="basic-text top-content-block-p">
 								<?php echo esc_html( $top_custom_fields[ 'top-about-text' ] );?>
@@ -79,7 +81,9 @@ get_header();
 					<div class="top-content-block-text works">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								WORKS
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-works' ] );
+							?>
 							</h1>
 							<p class="basic-text top-content-block-p">
 								<?php echo esc_html( $top_custom_fields[ 'top-works-text' ] );?>
@@ -101,7 +105,9 @@ get_header();
 					<div class="top-content-block-text news">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								NEWS
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-news' ] );
+							?>
 							</h1>
 							<ul class="top-content-block-news-list">
 							
@@ -146,7 +152,9 @@ get_header();
 					<div class="top-content-block-text blog">
 						<div class="top-content-text-inner">
 							<h1 class="basic-ttl">
-								BLOG
+							<?php 
+								echo esc_html( $top_custom_fields[ 'name-blog' ] );
+							?>
 							</h1>
 							<ul class="top-content-block-news-list">
 
@@ -193,7 +201,9 @@ get_header();
 							まずは、お気軽にご相談ください。
 						</p>
 						<h1 class="basic-ttl">
-							CONTACT
+						<?php 
+								echo esc_html( $top_custom_fields[ 'name-contact' ] );
+							?>
 						</h1>
 						<div class="top-content-block-contact">
 							<?php echo apply_filters('the_content', $top_custom_fields[ 'top-contact-text' ]);?>
