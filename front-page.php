@@ -12,24 +12,6 @@ get_header();
 		<main id="main" class="site-main">
 
 			<?php
-		/*if ( have_posts() ) :
-
-
-			 Start the Loop 
-			while ( have_posts() ) :
-				the_post();
-			var_dump(get_post_meta($post->ID));
-			
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-			endif;*/
 			//カスタムフィールド読み込み
 			if ( class_exists( 'Smart_Custom_Fields' ) ):
 			$top_custom_fields = SCF::get_option_meta( 'theme-options' );
@@ -193,7 +175,7 @@ get_header();
 				<section class="top-content-contact">
 					<!--<figure  class="top-content-block-img contact">
 						<?php
-						echo wp_get_attachment_image( $top_custom_fields[ 'top-contact-image' ] , 'large' );
+							echo wp_get_attachment_image( $top_custom_fields[ 'top-contact-image' ] , 'large' );
 						?>
 					</figure>-->
 					<div class="top-content-block-contact-wrapper">
@@ -201,7 +183,7 @@ get_header();
 							まずは、お気軽にご相談ください。
 						</p>
 						<h1 class="basic-ttl">
-						<?php 
+							<?php 
 								echo esc_html( $top_custom_fields[ 'name-contact' ] );
 							?>
 						</h1>
@@ -234,32 +216,6 @@ get_header();
 				pauseOnFocus: false,
 				pauseOnHover : false,
 			} );
-			
-			/*$( window ).scroll( function() {
-				let scrollVal = $( window ).scrollTop();
-				//console.log(scrollVal)
-				$( '.top-content-block-border' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal - 260 ) / 8
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-				$( '.top-content-block-text' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal - 250 ) / 16
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-				$( '.top-content-block-img img' ).each( function() {
-					let offsetTop = $( this ).offset().top;
-					var translate = ( offsetTop - scrollVal + 0) / 24
-					$( this ).css( {
-						'transform' : 'translateY('+translate+'px)'
-					} )
-				} )
-			} )*/
 		});
 	</script>
 	<?php
